@@ -20,6 +20,7 @@ body{
     text-align: center;
     text-decoration: none;
 }
+
 .header-img{
     background-image: url('https://www.stonybrook.edu/commcms/studyabroad/_images/outgoing-banner-images/all-year-website-photos/austrailia/deakinburwood-banner.png');
     background-repeat: no-repeat;
@@ -164,7 +165,7 @@ body{
     width:100%;
     height: auto;
 }
-
+ 
 /* tablet view */
 @media only screen and (max-width: 1024px) { 
     .gallery {
@@ -174,7 +175,7 @@ body{
 }
 
 /* Mobile view */
-@media only screen and (max-width: 500px) { 
+@media only screen and (max-width: 700px) { 
     .header-img{
         height: 300px;
     }
