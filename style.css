@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    list-style-type: none;
+    overflow:hidden;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.nav li{
+    float: left;
+}
+.nav li a{
+    display: block;
+    color: #058095;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+.header-img{
+    background-image: url('https://www.stonybrook.edu/commcms/studyabroad/_images/outgoing-banner-images/all-year-website-photos/austrailia/deakinburwood-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 500px;
+    background-position: right;
+    background-color: black;
+}
+.overlay{
+    background-color: black;
+    filter:opacity(.5);
+    position:absolute;
+    top: 55%;
+    height:10%;
+    width:100%;
+    transition: .1s ease;
+    opacity: 0;
+}
+.header-img:hover .overlay{
+    opacity: 0.5;
+    filter:brightness(100%);
+}
+.message{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.profile{
+    width:100%;
+    height:auto;
+    
+}
+.profile img{
+    border-radius: 50%;
+    width:150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:5%;
+}
+.profile h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2%;
+    font-size: 20px;
+    text-align: center;
+    color: #058095;
+}
+.profile h2:after{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2%;
+    content: '';
+    width: 160px;
+    height: 2px;
+    display: block;
+    background: #058095;
+}
+.center{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2%;
+    font-size: 30px;
+    text-align: center;
+    color: #058095;
+}
+.project-container{
+    margin-top: 2%;
+    display: inline-block;
+    
+}
+.project-container .row::after{
+    display:table;
+    content:"";
+    clear: both;
+    margin-bottom: 2%;
+
+}
+.project-container .col{
+    float: left;
+    width: 50%;
+}
+.project-container .col h4 a{
+    margin-top: 20%;
+    margin-left: 5%;
+    color: #058095;
+    text-decoration: none;
+    font-size: 20px;
+    float: left;
+}
+.project-container img{
+    border-radius: 15%;
+    width: 100%;
+    height: 150px;
+}
+.img-container{
+    width: 100%;
+    height:auto;
+}
+.img-container h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2%;
+    font-size: 30px;
+    text-align: center;
+    color: #058095;
+}
+.img-container h2::before{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:2%;
+    content: '';
+    width: 160px;
+    height: 2px;
+    display: block;
+    background: #058095;
+}
+.gallery{
+    padding: 0.5% 0.5%;
+    float: left;
+    width: 24%;
+}
+.res-img{
+    border: 1px solid #ccc;
+}
+.res-img:hover{
+    border: 1px solid #058095;
+}
+.res-img img{
+    width:100%;
+    height: auto;
+}
+
+/* tablet view */
+@media only screen and (max-width: 1024px) { 
+    .gallery {
+        width: 48%;
+        padding: 1% 1%; 
+    }
+}
+
+/* Mobile view */
+@media only screen and (max-width: 500px) { 
+    .header-img{
+        height: 300px;
+    }
+    .overlay {
+        top: 30%; 
+    }
+    .gallery{
+        width: 100%;
+    }
+
+}
+
